@@ -22,7 +22,15 @@
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.use_sql_comments" value="true"/>
             <property name="hibernate.jdbc.batch_size" value="10"/>
-            <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <!--     hibernate.hbm2ddl.auto 옵션
+                • create
+                • create-drop
+                • update : 변경분만 매핑
+                • validate : 엔티티와 테이블이 정상 매핑되었는지만 확인
+                • none : 사용하지 않음
+
+                   -->
         </properties>
     </persistence-unit>
 </persistence>
